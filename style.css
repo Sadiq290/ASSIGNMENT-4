@@ -130,10 +130,10 @@ nav ul li a:hover{
     margin-top:15px;
 }
 
-#depart-inp{
+#depart-input{
     height: 55px;
 }
-#return-inp{
+#return-input{
     height: 55px;
 }
 #inputFirst{
@@ -151,5 +151,32 @@ nav ul li a:hover{
      margin-bottom: 100px; 
 } 
 #confirm{
-    /* display: none; */
+    display: none;
+}
+.box{
+  height: 300px; 
+  text-align: center;
+  align-content: center;
+}
+.confirm-box{
+    background-color: white;
+    width: 500px;
+    margin: 0px 400px;
+    border: 3px solid bisque;
+    box-shadow: 1px 10px 10px 1px grey;
+    border-radius: 2%;
+}
+.confirmation{
+    text-align: center;
+    color:green; 
+    padding-top:20px;
+}
+#congrats{
+    color:navy;
+    padding: 5px 15px 20px 15px;
+}
+#box-text{
+    padding: 10px 15px 10px 20px;
+    color: salmon;
+
 }

@@ -8,22 +8,23 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" >
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!--  stylesheet-->
     <link rel="stylesheet" href="style.css">
     <!-- favicon added and bootstrap added-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/bg.png" type="image/x-icon">
 </head>
 
 <body>
-    
+
     <!--Header and Menu Section-->
     <header class="container navbar">
         <nav>
-            <ul >
+            <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -33,171 +34,184 @@
     </header>
 
     <!--Booking Section-->
-    <section id = "bookedSection">
-    <main class="main-content container">
-        <div class="booking-form">
-            <h3>Booking Flights</h3>
-            <div class="input-group ">
-                <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
-            </div>
-            <div class="input-group">
-                <label for="">Flying To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
-            </div>
-            <div class="inputs">
-                <div class="input-group">
-                    <label  class = "departure" for="">Departure</label>
-                        <input id ="depart-inp" class="inp-style" type="date" name="">
+    <section id="bookedSection">
+        <main class="main-content container">
+            <div class="booking-form">
+                <h3>Booking Flights</h3>
+                <div class="input-group ">
+                    <label for="">Flying From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
                 </div>
                 <div class="input-group">
-                    <label for="">Return</label>
-                    <input id = "return-inp" class="inp-style" type="date" name="">
+                    <label for="">Flying To</label>
+                    <input class="inp-style" type="text" name="" placeholder="New York, United States">
                 </div>
-            </div>
-            <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <input value="0" id="inputFirst" class="inp-style inp-width" type="number" name="">
-                </div>
-                <div class="plus-minus-btn">
-                    <!-- button style added -->
-                    <p class="btn btn-success me-1" id="plusFirst">+</p>
-                    <p class="btn btn-danger" id="minusFirst">-</p>
-                </div>
-            </div>
-
-            <div class="input-group f-class">
-                <div>
-                    <label for="">Economy ($100)</label>
-                    <input id="inputEconomy" class="inp-style inp-width" value="0" type="number" name="">
-                </div>
-                <div class="plus-minus-btn">
-                    <!-- button style added -->
-                    <p class="btn btn-success me-1" id="plusEconomy">+</p>
-                    <p class="btn btn-danger" id="minusEconomy">-</p>
-                </div>
-            </div>
-            <div class="calculations">
-                <div class="amount">
-                    <div class="left">
-                        <p>Subtotal</p>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label class="departure" for="">Departure</label>
+                        <input id="depart-input" class="inp-style" type="date" name="">
                     </div>
-                    <div class="right">
-                        <p>$ <span id = "subtotal">0</span></p>
+                    <div class="input-group">
+                        <label for="">Return</label>
+                        <input id="return-input" class="inp-style" type="date" name="">
+                    </div>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <input value="0" id="inputFirst" class="inp-style inp-width" type="number" name="">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <!-- button style added -->
+                        <p class="btn btn-success me-1" id="plusFirst">＋</p>
+                        <p class="btn btn-danger" id="minusFirst">―</p>
                     </div>
                 </div>
 
-                <div class="amount">
-                    <div class="left">
-                        <p>Charge 10% VAT</p>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <input id="inputEconomy" class="inp-style inp-width" value="0" type="number" name="">
                     </div>
-                    <div class="right">
-                        <p>$ <span id = "tax"> 0 </span></p>
-                    </div>
-                </div>
-                <hr>
-                <div class="amount">
-                    <div class="left">
-                        <h4>Total</h4>
-                    </div>
-                    <div class="right">
-                        <p>$ <span id = "total">0</span></p>
+                    <div class="plus-minus-btn">
+                        <!-- button style added -->
+                        <p class="btn btn-success me-1" id="plusEconomy">＋</p>
+                        <p class="btn btn-danger" id="minusEconomy">―</p>
                     </div>
                 </div>
-            </div>
-            <button id = "order" class="btn-style">Book Now</button>
-        </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="subtotal">0</span></p>
+                        </div>
+                    </div>
 
-        <div class="booking-content">
-            <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias  veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
-        </div>
-    </main>
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="tax"> 0 </span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="total">0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button id="book_btn" class="btn-style">Book Now</button>
+            </div>
+
+            <div class="booking-content">
+                <h1>discover <br> around the world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                    veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt
+                    nobise voluptatibus quam</p>
+            </div>
+        </main>
     </section>
-    <section id = "confirm" class="height">
-           <h1>MY name is Sadiq</h1>
+    <section  id="confirm" class="height ">
+        <div class="box">
+            <div class  = "confirm-box">
+            <h1 class="confirmation" id="headline">Booked Successfully!</h1>
+            <h4 class="confirmation" id="congrats">Congratulations! Your ticket has been approved!!</h4>
+            <h5 id = "box-text">Thank you to use our service. We and our team members will give their best for you. So, stay connected with us.Hope you will enjoy a taste  of nice journey.</h5>
+            </div>
+        </div>
+        <footer>
+            <p style="text-align: center;padding-top:100px;">© Sadiq's Website.All rights reserved.</p>
+        </footer>
     </section>
-    
 
-        <!-- javascript start -->
-        <script>
-    
-            function subtotal(){
-                var inputFirst_value = document.getElementById('inputFirst').value  
-                var inputEconomy_value= document.getElementById('inputEconomy').value
 
-                
-                if(inputFirst_value>=0 && inputEconomy_value>=0){
-                var subtotal = parseInt(inputFirst_value)*150 + parseInt(inputEconomy_value)*100;
-                var tax = parseFloat(subtotal/10);
+    <!-- javascript start -->
+    <script>
+        //  function for total and tax
+        function subtotal() {
+            var inputFirst_value = document.getElementById('inputFirst').value
+            var inputEconomy_value = document.getElementById('inputEconomy').value
+
+
+            if (inputFirst_value >= 0 && inputEconomy_value >= 0) {
+                var subtotal = parseInt(inputFirst_value) * 150 + parseInt(inputEconomy_value) * 100;
+                var tax = parseFloat(subtotal / 10);
                 var total = tax + subtotal;
 
-                
+
                 document.getElementById('subtotal').innerText = subtotal;
-                document.getElementById('tax').innerText = tax ;  
+                document.getElementById('tax').innerText = tax;
 
                 document.getElementById('total').innerText = total;
-                }
             }
-               
+        }
 
-            function minus_plus(input_value,z){
-                
-                var  input = document.getElementById(input_value).value;
-                if(input==0 && z<-1){
-                    var valueFirst= parseInt(input) + 0; 
-                    subtotal();
-                }
-                else if(input<0){
-                     alert('You can not book a negative number of seat.');
-                }
-                else{
-                var valueFirst= parseInt(input) + 1 + z; 
+        // function for every input value
+        function minus_plus(input_value, z) {
+
+            var input = document.getElementById(input_value).value;
+            if (input == 0 && z < -1) {
+                var valueFirst = parseInt(input) + 0;
+                subtotal();
+            }
+            else if (input < 0) {
+                alert('You can not book a negative number of seat.');
+            }
+            else {
+                var valueFirst = parseInt(input) + 1 + z;
                 document.getElementById(input_value).value = valueFirst;
                 subtotal();
-               
-                }
-            
+
             }
 
+        }
 
-            var minusFirst = document.getElementById('minusFirst');
-            minusFirst.addEventListener('click', function (){
-                minus_plus('inputFirst',-2)       
+        // calling function for every plus,minus's input
+        var minusFirst = document.getElementById('minusFirst');
+        minusFirst.addEventListener('click', function () {
+            minus_plus('inputFirst', -2)
+        })
+
+        var plusFirst = document.getElementById('plusFirst');
+        plusFirst.addEventListener('click', function () {
+            minus_plus('inputFirst', 0)
+        })
+
+        var plusEconomy = document.getElementById('plusEconomy');
+        plusEconomy.addEventListener('click', function () {
+            minus_plus('inputEconomy', 0)
+        })
+
+        var minusEconomy = document.getElementById('minusEconomy');
+        minusEconomy.addEventListener('click', function () {
+            minus_plus('inputEconomy', -2)
+        })
+
+
+        //    bonus work new page open
+            var book_btn = document.getElementById('book_btn');
+            book_btn.addEventListener('click', function () {
+                var bookedSection = document.getElementById('bookedSection');
+                bookedSection.style.display = 'none';
+
+                var confirm = document.getElementById('confirm');
+                confirm.style.display = 'block';
             })
 
-            var plusFirst = document.getElementById('plusFirst');
-            plusFirst.addEventListener('click', function (){
-                minus_plus('inputFirst',0)
-            })
-
-            var plusEconomy = document.getElementById('plusEconomy');
-            plusEconomy.addEventListener('click', function (){
-                minus_plus('inputEconomy',0)
-            })
-
-            var minusEconomy = document.getElementById('minusEconomy');
-            minusEconomy.addEventListener('click', function (){
-                minus_plus('inputEconomy',-2) 
-            })
+    </script>
 
 
-           
-           var order = document.getElementById('order');
-           order.addEventListener('click',function(){
-
-            var bookedSection = document.getElementById('bookedSection');
-            bookedSection.style.display = 'none';
-
-           });
-
-
-        </script>
-
-
-        <!-- BootsTrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- BootsTrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
