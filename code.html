@@ -132,6 +132,7 @@
                 
                 document.getElementById('subtotal').innerText = subtotal;
                 document.getElementById('tax').innerText = tax ;  
+
                 document.getElementById('total').innerText = total;
                 }
             }
@@ -156,34 +157,25 @@
             
             }
 
-           
 
             var minusFirst = document.getElementById('minusFirst');
             minusFirst.addEventListener('click', function (){
-              
-                minus_plus('inputFirst',-2)
-                
+                minus_plus('inputFirst',-2)       
             })
-
+            
             var plusFirst = document.getElementById('plusFirst');
             plusFirst.addEventListener('click', function (){
-              
                 minus_plus('inputFirst',0)
-               
             })
 
             var plusEconomy = document.getElementById('plusEconomy');
             plusEconomy.addEventListener('click', function (){
-              
                 minus_plus('inputEconomy',0)
-               
             })
 
             var minusEconomy = document.getElementById('minusEconomy');
             minusEconomy.addEventListener('click', function (){
-              
-                minus_plus('inputEconomy',-2)
-               
+                minus_plus('inputEconomy',-2) 
             })
         
         </script>
