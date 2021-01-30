@@ -69,6 +69,7 @@
                 <div>
                     <label for="">Economy ($100)</label>
                     <input id="inputEconomy" class="inp-style inp-width" value="0" type="number" name="">
+                    <p id = "invalid"></p>
                 </div>
                 <div class="plus-minus-btn">
                     <!-- button style added -->
@@ -117,19 +118,13 @@
 
         <!-- javascript start -->
         <script>
-            function minus_plus(input_value,z){
-                
-                var  inputFirst = document.getElementById(input_value).value;
-                if(inputFirst==0 && z<-1){
-                    var valueFirst= parseInt(inputFirst) + 0; 
-                }
-                else{
-                var valueFirst= parseInt(inputFirst) + 1 + z; 
-                document.getElementById(input_value).value = valueFirst;
-                }
-
+    
+            function subtotal(){
                 var inputFirst_value = document.getElementById('inputFirst').value  
                 var inputEconomy_value= document.getElementById('inputEconomy').value
+
+                
+                if(inputFirst_value>=0 && inputEconomy_value>=0){
                 var subtotal = parseInt(inputFirst_value)*150 + parseInt(inputEconomy_value)*100;
                 var tax = parseFloat(subtotal/10);
                 var total = tax + subtotal;
@@ -138,34 +133,57 @@
                 document.getElementById('subtotal').innerText = subtotal;
                 document.getElementById('tax').innerText = tax ;  
                 document.getElementById('total').innerText = total;
+                }
+            }
                
 
+            function minus_plus(input_value,z){
+                
+                var  input = document.getElementById(input_value).value;
+                if(input==0 && z<-1){
+                    var valueFirst= parseInt(input) + 0; 
+                    subtotal();
+                }
+                else if(input<0){
+                     alert('You can not book a negative number of seat.');
+                }
+                else{
+                var valueFirst= parseInt(input) + 1 + z; 
+                document.getElementById(input_value).value = valueFirst;
+                subtotal();
+               
+                }
+            
             }
-        
 
            
+
             var minusFirst = document.getElementById('minusFirst');
             minusFirst.addEventListener('click', function (){
               
                 minus_plus('inputFirst',-2)
+                
             })
 
             var plusFirst = document.getElementById('plusFirst');
             plusFirst.addEventListener('click', function (){
               
                 minus_plus('inputFirst',0)
+               
             })
 
             var plusEconomy = document.getElementById('plusEconomy');
             plusEconomy.addEventListener('click', function (){
               
                 minus_plus('inputEconomy',0)
+               
             })
 
             var minusEconomy = document.getElementById('minusEconomy');
             minusEconomy.addEventListener('click', function (){
               
                 minus_plus('inputEconomy',-2)
+               
             })
         
         </script>
