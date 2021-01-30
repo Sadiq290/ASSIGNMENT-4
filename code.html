@@ -19,8 +19,9 @@
 </head>
 
 <body>
+    
     <!--Header and Menu Section-->
-    <header class="container">
+    <header class="container navbar">
         <nav>
             <ul >
                 <li><a href="#">Home</a></li>
@@ -32,10 +33,11 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <section id = "bookedSection ">
+    <main class="main-content container ">
         <div class="booking-form">
             <h3>Booking Flights</h3>
-            <div class="input-group">
+            <div class="input-group ">
                 <label for="">Flying From</label>
                 <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
             </div>
@@ -60,8 +62,8 @@
                 </div>
                 <div class="plus-minus-btn">
                     <!-- button style added -->
-                    <p class="btn btn-success me-3" id="plusFirst">+</p>
-                    <p class="btn btn-danger" id="minusFirst">−</p>
+                    <p class="btn btn-success me-1" id="plusFirst">+</p>
+                    <p class="btn btn-danger" id="minusFirst">-</p>
                 </div>
             </div>
 
@@ -69,18 +71,16 @@
                 <div>
                     <label for="">Economy ($100)</label>
                     <input id="inputEconomy" class="inp-style inp-width" value="0" type="number" name="">
-                    <p id = "invalid"></p>
                 </div>
                 <div class="plus-minus-btn">
                     <!-- button style added -->
-                    <p class="btn btn-success me-3" id="plusEconomy">+</p>
-                    <p class="btn btn-danger" id="minusEconomy">−</p>
+                    <p class="btn btn-success me-1" id="plusEconomy">+</p>
+                    <p class="btn btn-danger" id="minusEconomy">-</p>
                 </div>
             </div>
             <div class="calculations">
                 <div class="amount">
                     <div class="left">
-                        <p id = "invalid"></p>
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
@@ -106,15 +106,19 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id = "order" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias  veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
-            <p></p>
         </div>
-        </section>
+    </main>
+    </section>
+    <section id = "confirm" class="height">
+           <h1>MY name is Sadiq</h1>
+    </section>
+    
 
         <!-- javascript start -->
         <script>
@@ -162,7 +166,7 @@
             minusFirst.addEventListener('click', function (){
                 minus_plus('inputFirst',-2)       
             })
-            
+
             var plusFirst = document.getElementById('plusFirst');
             plusFirst.addEventListener('click', function (){
                 minus_plus('inputFirst',0)
@@ -177,7 +181,20 @@
             minusEconomy.addEventListener('click', function (){
                 minus_plus('inputEconomy',-2) 
             })
-        
+
+
+           
+            var order = document.getElementById('order');
+            order.addEventListener('click',function(){
+                    
+               var bookedSection= document.getElementById('bookedSection');
+               bookedSection.style.display = "none";
+
+               var confirm = document.getElementById('confirm');
+               confirm.style.display = "block";
+              
+            })
+            
         </script>
 
 

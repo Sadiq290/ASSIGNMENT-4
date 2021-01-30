@@ -6,9 +6,9 @@
     list-style-type: none;
 }
 body{
-    font-family: 'Roboto', sans-serif;
-    background:url("images/bg.png");
+    font-family: 'Roboto', sans-serif; 
     background-repeat: no-repeat;
+    background-image: url(images/bg.png);
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
@@ -136,4 +136,20 @@ nav ul li a:hover{
 #return-inp{
     height: 55px;
 }
-
+#inputFirst{
+    margin-top: 15px;   
+    height: 40px;
+}
+#inputEconomy{
+    margin-top: 15px;   
+    height: 40px;
+}
+.height{
+    height: 270px;
+}
+.navbar{
+     margin-bottom: 100px; 
+} 
+#confirm{
+    /* display: none; */
+}
