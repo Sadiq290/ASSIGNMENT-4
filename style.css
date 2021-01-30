@@ -175,8 +175,8 @@ nav ul li a:hover{
     color:navy;
     padding: 5px 15px 20px 15px;
 }
-#box-text{
+.box-text{
     padding: 10px 15px 10px 20px;
-    color: salmon;
+    color: cadetblue;
 
 }
